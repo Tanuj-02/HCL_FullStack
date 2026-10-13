@@ -1,0 +1,116 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Azure Website</title>
+
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 45px 30px;
+            border-radius: 20px;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #dbeafe;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #7dd3fc;
+            transform: translateY(-2px);
+        }
+
+        #message {
+            margin-top: 25px;
+            font-weight: bold;
+            color: #86efac;
+            overflow-wrap: anywhere;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Hello, Azure! 🚀</h1>
+
+        <p>
+            Welcome to my first Azure Static Web App.
+            This website uses HTML, CSS, and JavaScript
+            in a single file.
+        </p>
+
+        <button onclick="showMessage()">
+            Test JavaScript
+        </button>
+
+        <div id="message"></div>
+
+        <div class="footer">
+            Deployed with GitHub Actions and Azure
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function showMessage() {
+            const message = document.getElementById("message");
+
+            message.textContent =
+                "Success! JavaScript is working on Azure 🎉";
+        }
+    </script>
+
+</body>
+</html>
+```
